@@ -1,0 +1,922 @@
+html {
+    font-size: 17px;
+}
+
+* {
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-6/sym597.cur), auto !important;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-image: url(last\ bg.png);
+    background-size:1294px;
+}
+body .background {
+    background-image: url(last\ bg.png);
+    width: fit-content;
+    height: fit-content;
+}
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+i {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 100;
+    font-stretch: ultra-expanded;
+    font-size: 120%;
+}
+
+.love {
+    font-size: 3.8em;
+    text-align: center;
+    animation: love 0.8s infinite;
+    font-family: 'Montagu Slab', serif;
+    font-weight: 800;
+}
+
+   @keyframes love{
+   0% {
+    transform: rotate(2deg);
+    }
+    50% {
+    transform: rotate(2deg);
+    }
+    51% {
+    transform: rotate(-2deg);
+    }
+    100% {
+    transform: rotate(-2deg);
+    }
+}
+
+h5 {
+    font-size: 0.90em;
+    font-weight: bold;
+    text-align: center;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+}
+
+nav{
+    text-align: center;
+    font-size: 80%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.flex-container{
+    display: flexbox;
+    background-color:rgb(189, 162, 162);
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+    color: white;
+}
+
+ul {
+    display:block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    padding-bottom: 0.3cm;
+    padding-top: 0.1cm;
+    align-items: center;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 100;
+    font-stretch: ultra-expanded;
+    font-size: 75%;
+}
+nav .links li:not(:last-child)::after, footer .links li:not(:last-child)::after {
+    content: " | ";
+    color: black;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-style: italic;
+    font-size: 130%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 7px #d2d2d2;
+    text-transform: lowercase;
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-style: italic;
+}
+
+.love:hover {
+    color: rgb(255, 156, 194);
+}
+
+.container {
+    background-color: rgb(255 248 252);
+    align-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 464px;
+    margin-right: 464px;    
+    margin-top: 31px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+
+div .background {
+    background-size: 1500px;
+    padding: 6px 10px;
+    height: 100%;
+    margin-left: -2%;
+    margin-top: -0.6%;
+    height: 933px;
+}
+
+/*illusssssssssssss css*/
+/* firsstttt draiwnd*/
+.maincontainer {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -20%;
+}
+.thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(https://cdn.discordapp.com/attachments/1186115256590798988/1186127846054305844/Untitled10_20231109010133.png?ex=65921ea3&is=657fa9a3&hm=3d551e5…&);
+    background-size: contain;
+}
+.theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.thefront h1, .theback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+.thefront p, .theback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+  /* 2nddddd drawing */
+.maincontainerw {
+    position: absolute;
+    width: 326px;
+    height: 400px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 160%;
+}
+.thecardw{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+
+}
+  
+.thecardw:hover{
+    transform: rotateY(180deg);
+}
+.thefrontw{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(https://cdn.discordapp.com/attachments/1186115256590798988/1186127846863810611/Untitled11_20231110090519.png?ex=65921ea3&is=657fa9a3&hm=31dcf40fb9f4e821956804aed6d83a8662c1559d5713133bb66ca411cad2d0f5&);
+    background-size: contain;
+}
+.thebackw{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.thefrontw h1, .thebackw h1 {
+    font-family: 'zilla slab', sans-serif;
+    padding-top: 22px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+  
+.thefrontw p, .thebackw p {
+    font-family: 'zilla slab', sans-serif;
+    padding-top: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+button {
+    margin-left: -159px;
+    margin-right: 190px;
+    padding-block: initial;
+    margin-top: 58px;
+}
+
+/*songgggggg css*/
+
+.Tyler {
+    font-size: 98.8%;
+    text-align: center;
+    animation: love 0.8s infinite;
+    font-family: 'Montagu Slab', serif;
+    font-weight: 800;
+    margin-left: -75%;
+    margin-top: 4%;
+    color: rgb(255, 156, 194);
+}
+
+.Tyler:hover {
+    color: rgb(187, 116, 143);
+}
+
+   @keyframes Tyler{
+   0% {
+    transform: rotate(2deg);
+    }
+    50% {
+    transform: rotate(2deg);
+    }
+    51% {
+    transform: rotate(-2deg);
+    }
+    100% {
+    transform: rotate(-2deg);
+    }
+}
+
+.sweetmaincontainer {
+    position: absolute;
+    width: 298px;
+    height: 400px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.sweetcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.sweetcard:hover{
+    transform: rotateY(180deg);
+}
+.sweetfront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(sweett.jpg);
+    background-size: contain;
+}
+.sweetback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.sweetfront h1, .sweetback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 51px;
+    padding-right: 60px;
+    padding-top: 62px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    color: rgb(234, 184, 203);
+}
+.sweetfront p, .sweetback p {
+    font-family: 'zilla slab', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.wilmaincontainer {
+    position: absolute;
+    width: 262px;
+    height: 347px;
+    background: none;
+    top: 68%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.wilcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.wilcard:hover{
+    transform: rotateY(180deg);
+}
+.wilfront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(wilshire.jpg);
+    background-size: contain;
+}
+.wilback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.wilfront h1, .wilback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 51px;
+    padding-right: 60px;
+    padding-top: 62px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+}
+.wilfront p, .wilback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.ifmaincontainer {
+    position: absolute;
+    width: 258px;
+    height: 340px;
+    background: none;
+    top: 31%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.ifcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.ifcard:hover{
+    transform: rotateY(180deg);
+}
+.iffront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(ifhy.jpg);
+    background-size: contain;
+}
+.ifback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.iffront h1, .ifback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 51px;
+    padding-right: 60px;
+    padding-top: 43px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+}
+.iffront p, .ifback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.glmaincontainer {
+    position: absolute;
+    width: 275px;
+    height: 364px;
+    background: none;
+    top: 37%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.glcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.glcard:hover{
+    transform: rotateY(180deg);
+}
+.glfront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(glitter.jpg);
+    background-size: contain;
+}
+.glback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.glfront h1, .glback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 51px;
+    padding-right: 60px;
+    padding-top: 72px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    color: rgb(243, 209, 109);
+}
+.glfront p, .glback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.itmaincontainer {
+    position: absolute;
+    width: 262px;
+    height: 351px;
+    background: none;
+    top: 63%;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.itcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.itcard:hover{
+    transform: rotateY(180deg);
+}
+.itfront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(ifhy.jpg);
+    background-size: contain;
+}
+.itback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.itfront h1, .itback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 51px;
+    padding-right: 60px;
+    padding-top: 62px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    color: rgb(145, 213, 236);
+}
+.itfront p, .itback p {
+    font-family: 'zilla slab', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.swmaincontainer {
+    position: absolute;
+    width: 235px;
+    height: 326px;
+    background: none;
+    top: 70%;
+    left: 102%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.swcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.swcard:hover{
+    transform: rotateY(180deg);
+}
+.swfront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(sweett.jpg);
+    background-size: contain;
+}
+.swback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.swfront h1, .swback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 47px;
+    padding-right: 57px;
+    padding-top: 34px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(234, 184, 203);
+}
+.swfront p, .swback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sgmaincontainer {
+    position: absolute;
+    width: 201px;
+    height: 264px;
+    background: none;
+    top: 71%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.sgcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.sgcard:hover{
+    transform: rotateY(180deg);
+}
+.sgfront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(glitter.jpg);
+    background-size: contain;
+}
+.sgback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.sgfront h1, .sgback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 38px;
+    padding-right: 44px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(243, 209, 109);
+}
+.sgfront p, .sgback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tifmaincontainer {
+    position: absolute;
+    width: 201px;
+    height: 264px;
+    background: none;
+    top: 27%;
+    left: 114%;
+    transform: translate(-50%, -50%);
+    margin-left: -34%;
+}
+.tifcard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    box-shadow: 0px 5px 15px rgba(46, 0, 25, 0.145);
+}
+.tifcard:hover{
+    transform: rotateY(180deg);
+}
+.tiffront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: url(ithink.jpg);
+    background-size: contain;
+}
+.tifback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.tiffront h1, .tifback h1 {
+    font-family: 'Figtree', sans-serif;
+    padding-left: 38px;
+    padding-right: 44px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+    color: rgb(216, 119, 166);
+}
+.tiffront p, .tifback p {
+    font-family: 'Figtree', sans-serif;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
